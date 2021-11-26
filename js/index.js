@@ -1,7 +1,6 @@
 const $ = (selector) => document.querySelector(selector);
 
 function App() {
-
     const updateCount = () => {
         const menuCount = $("#coffee-list").querySelectorAll("li").length;
         $(".menu-count").innerText = `총 ${menuCount}개`;
@@ -12,6 +11,7 @@ function App() {
             alert("값을 입력해 주세요");
             return;
         }
+
         const coffeeName = $("#coffee-name").value;
         const menuTemplate = (coffeeName) => {
             return `
@@ -29,6 +29,7 @@ function App() {
                 </div>
             </li>`
         };
+
         $("#coffee-list").insertAdjacentHTML(
             "beforeend", menuTemplate(coffeeName)
         );
@@ -59,10 +60,11 @@ function App() {
         })
     // 메뉴 입력
         //$("#coffee-list").innerHTML = menuTemplate(coffeeName);
-        updateCount();
+        
 
     $("#submit-button").addEventListener("click", () => {
         coffeeSubmit();
+        updateCount();
     })
     $("#coffee-name")
         .addEventListener("keypress", (e) => {
@@ -70,6 +72,7 @@ function App() {
                 return;
             }
             coffeeSubmit();
+            updateCount();
         });
 }
 
