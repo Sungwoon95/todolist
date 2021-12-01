@@ -1,0 +1,15 @@
+body{background-color: #ffeded; position: relative; top:0; left:0; color:#ffffff;}
+.main-wrapper{width:100%; max-width: 480px; background-color: #ffaaaa; position: fixed; top:100px; left:50%; transform: translateX(-50%); max-height: 500px; overflow: auto; border-radius: 15px; padding:20px; box-sizing: border-box; box-shadow: 2px 2px 15px #ffaaaa;}
+h1{text-align: center; margin-bottom: 20px; font-family: 'pacifico';}
+.menu-count{text-align: center; margin-bottom: 20px;}
+
+#coffee-form{display:flex; align-items: center; justify-content: space-evenly; margin-bottom: 30px;}
+#coffee-name{background-color: transparent; border:1px solid #ffffff; line-height: 20px; padding:5px 20px; outline:0; color:#ffffff; box-sizing:border-box; border-radius: 500px; width:calc(100% - 90px)}
+button{background-color: transparent; border:1px solid #ffffff; line-height: 20px; padding:5px 20px; outline:0; color:#ffffff; box-sizing:border-box; border-radius: 500px;}
+#submit-button{display:inline-block; min-width:75px;}
+#submit-button:hover{background-color: #ffffff; color:#ff4d4d; transition: all ease 0.3s;}
+.button-wrap button{border:0; padding:5px 10px;}
+.button-wrap span{display:block; font-size:18px;}
+.button-wrap span:hover{color:#ff4d4d; transition:color ease 0.3s; cursor: pointer;}
+
+.menu-list{display:flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom:1px solid #ffffff;}
