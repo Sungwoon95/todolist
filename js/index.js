@@ -9,6 +9,7 @@ const store = {
     }
 
 }
+//로컬 스토리지에 상태 저장
 
 function App() {
     this.menu = [];
